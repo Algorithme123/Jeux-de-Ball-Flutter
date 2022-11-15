@@ -14,6 +14,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int i =1;
+  int numball =1;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,11 +32,11 @@ class _MyAppState extends State<MyApp> {
             child:TextButton(
               onPressed: (){
                 setState(() {
-                  // numball= Random().nextInt(5)+1;
+                  numball= Random().nextInt(5)+1;
                 });
                 print("Apuyer");
               },
-                child: Image( image: AssetImage('images/ball1.png'),
+                child: Image( image: AssetImage('images/ball$numball.png'),
                 ),
             ),
           ),
