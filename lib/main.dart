@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import 'constante.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,11 +21,12 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: kScafoldAppBar,
         appBar: AppBar(
           title: Text("Pose moi une Question",
             style: TextStyle(
               fontFamily: 'myfont',
+              color: kAppBar,
             ),
           ),
         ),
