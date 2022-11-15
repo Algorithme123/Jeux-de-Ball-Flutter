@@ -26,6 +26,7 @@ class _MyAppState extends State<MyApp> {
           title: Text("Pose moi une Question",
             style: TextStyle(
               fontFamily: 'myfont',
+              fontSize: 25.0,
               color: kAppBar,
             ),
           ),
